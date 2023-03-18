@@ -6,24 +6,24 @@ public class Main
 
     public static void main(String[] args)
     {
-        String ProductDescription;
+        double interestRate;
+        double futureValue = 0;
+        double monthlyPayment;
+        byte month;
         System.out.println("Hello world!");
         Scanner sc = new Scanner(System.in);
-       String ProductCode=sc.next();
-       switch(ProductCode)
-       {
-           case "hm01":
-               System.out.println(ProductDescription="Hammer");;
-               break;
-           case "bn03":
-               System.out.println(ProductDescription="Box of Nails");;
-               break;
-           default:
-               System.out.println(ProductDescription="Product not found");;
-               break;
+        System.out.println("Enter Interest rate: ");
+        interestRate=sc.nextDouble();
+        System.out.println("Enter monthly payment: ");
 
+        monthlyPayment=sc.nextDouble();
+        System.out.println("Enter number of months: ");
+        month=sc.nextByte();
+        for(int i=1;i<=month;i++){
+            futureValue=( futureValue + monthlyPayment)*(1+monthlyPayment);
+            System.out.println("Debug: "+i+" The future value is: "+futureValue);
+        }
 
-       }
     }
 
 
