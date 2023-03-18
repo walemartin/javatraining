@@ -6,22 +6,26 @@ public class Main
 
     public static void main(String[] args)
     {
+        String ProductDescription;
         System.out.println("Hello world!");
         Scanner sc = new Scanner(System.in);
-        System.out.println(factorial(5));
-    }
-    public static int factorial(int n)
-    {
-     if(n==1){
-         System.out.println("Factorial( "+n+" ) = 1");
-         return 1;
-     }
-     else {
-         //recursion is a method being inside of itself
-         System.out.println("Factorial( "+n+" ) ="+n+"* Factorial( "+(n-1)+" )");
-     return n*factorial(n-1);
-     }
+       String ProductCode=sc.next();
+       switch(ProductCode)
+       {
+           case "hm01":
+               System.out.println(ProductDescription="Hammer");;
+               break;
+           case "bn03":
+               System.out.println(ProductDescription="Box of Nails");;
+               break;
+           default:
+               System.out.println(ProductDescription="Product not found");;
+               break;
 
+
+       }
     }
+
+
 
 }
