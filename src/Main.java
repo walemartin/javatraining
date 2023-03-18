@@ -13,12 +13,12 @@ public class Main
     public static int factorial(int n)
     {
      if(n==1){
-         System.out.println("factorial( "+n+" ) = 1");
+         System.out.println("Factorial( "+n+" ) = 1");
          return 1;
      }
      else {
          //recursion is a method being inside of itself
-         System.out.println("factorial( "+n+" ) ="+n+"* factorial( "+(n-1)+" )");
+         System.out.println("Factorial( "+n+" ) ="+n+"* Factorial( "+(n-1)+" )");
      return n*factorial(n-1);
      }
 
